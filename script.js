@@ -18,10 +18,10 @@ function wikiSearch(){
                     var html = "";
                     $.each(obj, function(key, value){
                         html +=
-                        '<div class="article" onclick="goToWiki(' + value.pageid + ');">' +
+                        '<article class="article" onclick="goToWiki(' + value.pageid + ');">' +
                         '<h1>' + value.title + '</h1>' +
                         '<p>' + value.extract + '</p>' +
-                        '</div>' 
+                        '</article>' 
                         
                     });
                     $(".container").html(html);
